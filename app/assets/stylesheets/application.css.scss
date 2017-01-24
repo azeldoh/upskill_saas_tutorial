@@ -71,9 +71,9 @@ h1, h2, h3 {
     padding-bottom: 100px;
 }
 
-a.white:link, a.white:visited, a.white:hover, a.white:active {
+a.whitelink:link, a.whitelink:visited, a.whitelink:active {
     color: white;
-    opacity:0.75;
+    text-decoration: underline;
     &:hover {
         color: white;
         opacity:0.75;
