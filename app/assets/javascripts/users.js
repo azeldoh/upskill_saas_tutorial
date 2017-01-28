@@ -43,15 +43,12 @@ $(document).on('turbolinks:load', function(){
        } else {
            // Send cc info to stripe
             Stripe.createToken({
-            number: ccNum,
-            cvc: cvcNum,
-            expMonth: expMonth,
-            expYear: expYear,
-         }, stripeResponseHandler);
+                number: ccNum,
+                cvc: cvcNum,
+                expMonth: expMonth,
+                expYear: expYear,
+             }, stripeResponseHandler);
        }
-       
-        
-        
         return false;
     });
     
