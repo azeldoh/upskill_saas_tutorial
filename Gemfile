@@ -36,6 +36,12 @@ gem 'hirb', '0.7.3'
 # Use devise for user authentification
 gem 'devise', '4.2.0'
 
+# Use Stripe for payment processing
+gem 'stripe', '1.48.0'
+
+# Use Figaro for improtant stuff
+gem 'figaro', '1.1.1'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
