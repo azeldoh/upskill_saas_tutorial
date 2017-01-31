@@ -8,12 +8,15 @@ class ProfilesController < ApplicationController
   # POST to u/:uid/profile/
   def create
     # Ensure thet we have the user who is filling out form
+    
     @user = User.find(params[:user_id] )
+    
     # Create profile linked to this specific user
+    
     @profile = @user.build_profile( profile_params )
     if @profile.save
       flash[:success] = "Profile updated!"
-      redirect_to root_path
+      redirect_to user_path( params[:user_id] )
     else
       render action: :new
     end
